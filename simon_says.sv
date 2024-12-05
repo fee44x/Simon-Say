@@ -41,6 +41,17 @@ module simon_says (
         .slow_clk(slow_clk)
     );
 
+    led_controller led_ctrl (
+        .clk(clk),
+        .reset(reset),
+        .current_state(current_state),  // 传入当前状态
+        .CorrectMemory(CorrectMemory),
+        .display_index(display_index),  // 从状态机传入显示索引
+        .input_index(input_index),
+        .buttons(synced_buttons),
+        .leds(leds),
+        .display_done(display_done)
+    );
     // 初始化CorrectMemory
     initial begin
         CorrectMemory[0] = 2'b00; // A
