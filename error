@@ -1,11 +1,13 @@
-Error (10161): Verilog HDL error at led_controller.sv(4): object "state_t" is not declared. Verify the object name is correct. If the name is correct, declare the object.
-Error (10231): Verilog HDL error at led_controller.sv(16): value cannot be assigned to input "display_index"
-Error (10161): Verilog HDL error at led_controller.sv(17): object "DISPLAY" is not declared. Verify the object name is correct. If the name is correct, declare the object.
-Error (10231): Verilog HDL error at led_controller.sv(22): value cannot be assigned to input "display_index"
-Error (10161): Verilog HDL error at led_controller.sv(23): object "INPUT" is not declared. Verify the object name is correct. If the name is correct, declare the object.
-Error: Quartus Prime Analysis & Synthesis was unsuccessful. 5 errors, 1 warning
-	Error: Peak virtual memory: 4730 megabytes
-	Error: Processing ended: Thu Dec  5 12:33:50 2024
+Error (10028): Can't resolve multiple constant drivers for net "leds[3]" at simon_says.sv(54)
+Error (10029): Constant driver at simon_says.sv(100)
+Error (10028): Can't resolve multiple constant drivers for net "leds[2]" at simon_says.sv(54)
+Error (10028): Can't resolve multiple constant drivers for net "leds[1]" at simon_says.sv(54)
+Error (10028): Can't resolve multiple constant drivers for net "leds[0]" at simon_says.sv(54)
+Error (10028): Can't resolve multiple constant drivers for net "display_done" at simon_says.sv(54)
+Error (12153): Can't elaborate top-level user hierarchy
+Error: Quartus Prime Analysis & Synthesis was unsuccessful. 7 errors, 7 warnings
+	Error: Peak virtual memory: 4723 megabytes
+	Error: Processing ended: Thu Dec  5 12:39:42 2024
 	Error: Elapsed time: 00:00:07
-	Error: Total CPU time (on all processors): 00:00:07
-Error (293001): Quartus Prime Full Compilation was unsuccessful. 7 errors, 1 warning
+	Error: Total CPU time (on all processors): 00:00:06
+Error (293001): Quartus Prime Full Compilation was unsuccessful. 9 errors, 7 warnings
